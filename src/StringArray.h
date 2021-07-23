@@ -47,6 +47,7 @@ class LinkedList {
 
     class Iterator {
       ItemType* _node;
+      ItemType* _nextNode = nullptr;
     public:
       Iterator(ItemType* current = nullptr) : _node(current) {
           if (_node != nullptr) {
